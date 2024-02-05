@@ -9,7 +9,7 @@ class Interaction:
         self.ax.set_xlim(0, ax_range)
         self.ax.set_ylim(0, ax_range)
         plt.gca().set_aspect('equal')
-        self.remind = self.ax.text(0.0, -5.0, "Click the mouse to confirm " + str(num) + " more points.")
+        self.remind = self.ax.text(0.0, -self.ax_range / 10, "Click the mouse to confirm " + str(num) + " more points.")
         self.tar_num = num
         self.now_num = 0
 
